@@ -345,6 +345,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerPhysics: {fileID: 1035848861}
+  basePlayerAnimator: {fileID: 1035848864}
 --- !u!95 &1035848864
 Animator:
   serializedVersion: 4

@@ -6,6 +6,7 @@ public class PlayerMain : MonoBehaviour
 {
     
     [SerializeField] Rigidbody2D playerPhysics;
+    [SerializeField] Animator basePlayerAnimator;
 
     void Start()
     {
@@ -19,5 +20,9 @@ public class PlayerMain : MonoBehaviour
         float verticalMovement = Input.GetAxisRaw("Vertical");
         float horizontalMovement = Input.GetAxisRaw("Horizontal");
         playerPhysics.velocity = new Vector2( horizontalMovement, verticalMovement);
+
+    // Connects Player Movement to the the Animator
+        basePlayerAnimator.SetFloat("movementX", playerPhysics.velocity.x);
+        basePlayerAnimator.SetFloat("movementY", playerPhysics.velocity.y);
     }
 }
