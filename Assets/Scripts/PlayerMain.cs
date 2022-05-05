@@ -20,7 +20,7 @@ public class PlayerMain : MonoBehaviour
     //Creates 360 Movement for Base Player
         float verticalMovement = Input.GetAxisRaw("Vertical");
         float horizontalMovement = Input.GetAxisRaw("Horizontal");
-        playerPhysics.velocity = new Vector2( horizontalMovement, verticalMovement);
+        playerPhysics.velocity = new Vector2( horizontalMovement, verticalMovement) * moveSpeed;
 
     // Connects Player Movement to the the Animator
         basePlayerAnimator.SetFloat("movementX", playerPhysics.velocity.x);
