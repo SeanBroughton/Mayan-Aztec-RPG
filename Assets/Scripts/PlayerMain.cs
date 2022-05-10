@@ -4,14 +4,24 @@ using UnityEngine;
 
 public class PlayerMain : MonoBehaviour
 {
-    
+    public static PlayerMain instance;
+
     [SerializeField] Rigidbody2D playerPhysics;
     [SerializeField] Animator basePlayerAnimator;
     [SerializeField] int moveSpeed = 1;
 
     void Start()
     {
-    
+    // Creates a singleton pattern that stops the player from duplicating across level changes
+        if(instance != null && instance != this)
+        {
+            Destroy(this.gameObject);
+        }
+        else
+        {
+            instance = this;
+        }
+
     //Stops the player from being removed from the game when transitioning between scenes
         DontDestroyOnLoad(gameObject);
     }
