@@ -11,7 +11,9 @@ public class PlayerMain : MonoBehaviour
 
     void Start()
     {
-        
+    
+    //Stops the player from being removed from the game when transitioning between scenes
+        DontDestroyOnLoad(gameObject);
     }
 
     
