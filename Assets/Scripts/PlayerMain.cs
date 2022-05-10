@@ -11,7 +11,7 @@ public class PlayerMain : MonoBehaviour
     [SerializeField] Animator basePlayerAnimator;
     [SerializeField] int moveSpeed = 1;
 
-    void Start()
+    void Awake()
     {
     // Creates a singleton pattern that stops the player from duplicating across level changes
         if(instance != null && instance != this)

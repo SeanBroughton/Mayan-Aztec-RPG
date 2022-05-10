@@ -72,8 +72,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15dc62cd3d4bedc4f9d9988d7720e4ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneToLoad: Level 1
-  areaExitTransitionName: Level 1 - Zone 1
+  sceneToLoad: Level 2
+  areaExitTransitionName: Level 2 - Zone 1
+  areaEnter: {fileID: 1822789796}
 --- !u!1001 &5023619537805924867
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -99,7 +100,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5023619536252291750, guid: 38daf8fa962bc0648881095f9b409938, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 1.88
       objectReference: {fileID: 0}
     - target: {fileID: 5023619536252291750, guid: 38daf8fa962bc0648881095f9b409938, type: 3}
       propertyPath: m_LocalPosition.y
@@ -139,6 +140,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 38daf8fa962bc0648881095f9b409938, type: 3}
+--- !u!114 &1822789796 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5023619536252291751, guid: 38daf8fa962bc0648881095f9b409938, type: 3}
+  m_PrefabInstance: {fileID: 5023619537805924867}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93ec3613cbdbdc240901a46654e80e27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1822789797 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5023619536252291750, guid: 38daf8fa962bc0648881095f9b409938, type: 3}

@@ -571,12 +571,8 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1822789796, guid: 93b56ea99f50ce54d902fe298d315d7b, type: 3}
-      propertyPath: transitionAreaName
+      propertyPath: areaEnterTransitionName
       value: Level 1 - Zone 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1822789797, guid: 93b56ea99f50ce54d902fe298d315d7b, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 1.17
       objectReference: {fileID: 0}
     - target: {fileID: 8513206235539199753, guid: 93b56ea99f50ce54d902fe298d315d7b, type: 3}
       propertyPath: m_Name
@@ -625,14 +621,6 @@ PrefabInstance:
     - target: {fileID: 8513206235539199756, guid: 93b56ea99f50ce54d902fe298d315d7b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8513206235539199758, guid: 93b56ea99f50ce54d902fe298d315d7b, type: 3}
-      propertyPath: transitionName
-      value: Level 2 - Zone 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8513206235539199758, guid: 93b56ea99f50ce54d902fe298d315d7b, type: 3}
-      propertyPath: areaExitTransitionName
-      value: Level 2 - Zone 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 93b56ea99f50ce54d902fe298d315d7b, type: 3}

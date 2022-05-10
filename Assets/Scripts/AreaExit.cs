@@ -8,10 +8,11 @@ public class AreaExit : MonoBehaviour
    
     [SerializeField] string sceneToLoad;
     [SerializeField] string areaExitTransitionName;
+    //[SerializeField] AreaEnter areaEnter;
 
     void Start()
     {
-        
+        //areaEnter.areaEnterTransitionName = areaExitTransitionName;
     }
 
     
