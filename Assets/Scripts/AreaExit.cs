@@ -7,6 +7,7 @@ public class AreaExit : MonoBehaviour
 {
    
     [SerializeField] string sceneToLoad;
+    [SerializeField] string areaExitTransitionName;
 
     void Start()
     {
@@ -24,6 +25,7 @@ public class AreaExit : MonoBehaviour
     {
         if(other.CompareTag("Player"))
         {
+            PlayerMain.instance.transitionName = areaExitTransitionName;
             SceneManager.LoadScene(sceneToLoad);
         }
     }

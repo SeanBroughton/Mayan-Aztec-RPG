@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerMain : MonoBehaviour
 {
     public static PlayerMain instance;
+    public string transitionName;
 
     [SerializeField] Rigidbody2D playerPhysics;
     [SerializeField] Animator basePlayerAnimator;
